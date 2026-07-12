@@ -1,0 +1,249 @@
+{
+  "version": "1.1.0",
+  "updated": "2026-07-12",
+  "services": {
+    "google_analytics_4": {
+      "label_he": "גוגל אנליטיקס (GA4)",
+      "label_en": "Google Analytics 4",
+      "category": "analytics",
+      "match_patterns": ["googletagmanager.com/gtag/js", "google-analytics.com/analytics.js", "analytics.google.com"],
+      "cookie_names": ["_ga", "_ga_*", "_gid", "_gat", "_gat_*"],
+      "privacy_url": "https://policies.google.com/privacy",
+      "notes_he": "מדידת תנועה וניתוח התנהגות משתמשים באתר."
+    },
+    "google_tag_manager": {
+      "label_he": "גוגל תג מנג'ר",
+      "label_en": "Google Tag Manager",
+      "category": "analytics",
+      "match_patterns": ["googletagmanager.com/gtm.js"],
+      "cookie_names": ["_gcl_au"],
+      "privacy_url": "https://policies.google.com/privacy",
+      "notes_he": "מערכת לניהול תגיות מדידה ושיווק."
+    },
+    "microsoft_clarity": {
+      "label_he": "מיקרוסופט קלאריטי",
+      "label_en": "Microsoft Clarity",
+      "category": "analytics",
+      "match_patterns": ["clarity.ms"],
+      "cookie_names": ["_clck", "_clsk", "CLID"],
+      "privacy_url": "https://privacy.microsoft.com/privacystatement",
+      "notes_he": "הקלטות מסך ומפות חום לניתוח שימוש."
+    },
+    "hotjar": {
+      "label_he": "הוטג'אר",
+      "label_en": "Hotjar",
+      "category": "analytics",
+      "match_patterns": ["static.hotjar.com", "script.hotjar.com"],
+      "cookie_names": ["_hj*"],
+      "privacy_url": "https://www.hotjar.com/legal/policies/privacy/",
+      "notes_he": "מפות חום, הקלטות והתנהגות משתמשים."
+    },
+    "matomo": {
+      "label_he": "מאטומו",
+      "label_en": "Matomo",
+      "category": "analytics",
+      "match_patterns": ["matomo.js", "piwik.js"],
+      "cookie_names": ["_pk_id*", "_pk_ses*"],
+      "privacy_url": "https://matomo.org/privacy-policy/",
+      "notes_he": "אנליטיקס לניתוח תנועה באתר."
+    },
+    "woocommerce_sourcebuster": {
+      "label_he": "ווקומרס — ייחוס מקור הזמנה",
+      "label_en": "WooCommerce Order Attribution (Sourcebuster)",
+      "category": "analytics",
+      "match_patterns": ["sourcebuster.min.js", "sourcebuster.js"],
+      "cookie_names": ["sbjs_*"],
+      "privacy_url": "https://woocommerce.com/document/woocommerce-order-attribution/",
+      "notes_he": "עוקב אחר מקור התנועה שהוביל להזמנה (קמפיין, מנוע חיפוש, הפניה)."
+    },
+    "meta_pixel": {
+      "label_he": "פיקסל מטא (פייסבוק)",
+      "label_en": "Meta Pixel",
+      "category": "marketing",
+      "match_patterns": ["connect.facebook.net"],
+      "cookie_names": ["_fbp", "_fbc", "fr"],
+      "privacy_url": "https://www.facebook.com/policy.php",
+      "notes_he": "מעקב המרות ופרסום ממוקד ברשתות מטא."
+    },
+    "google_ads": {
+      "label_he": "גוגל אדס",
+      "label_en": "Google Ads",
+      "category": "marketing",
+      "match_patterns": ["googleadservices.com", "googlesyndication.com"],
+      "cookie_names": ["_gcl_au", "_gcl_aw", "IDE", "test_cookie"],
+      "privacy_url": "https://policies.google.com/privacy",
+      "notes_he": "פרסום ממוקד ומעקב המרות בגוגל."
+    },
+    "tiktok_pixel": {
+      "label_he": "פיקסל טיקטוק",
+      "label_en": "TikTok Pixel",
+      "category": "marketing",
+      "match_patterns": ["analytics.tiktok.com"],
+      "cookie_names": ["_ttp", "_tt_enable_cookie"],
+      "privacy_url": "https://www.tiktok.com/legal/privacy-policy",
+      "notes_he": "מעקב המרות ופרסום ממוקד בטיקטוק."
+    },
+    "linkedin_insight": {
+      "label_he": "לינקדאין אינסייט",
+      "label_en": "LinkedIn Insight Tag",
+      "category": "marketing",
+      "match_patterns": ["snap.licdn.com"],
+      "cookie_names": ["bcookie", "lidc", "li_gc", "UserMatchHistory"],
+      "privacy_url": "https://www.linkedin.com/legal/privacy-policy",
+      "notes_he": "מעקב המרות ופרסום ממוקד בלינקדאין."
+    },
+    "twitter_pixel": {
+      "label_he": "פיקסל X (טוויטר)",
+      "label_en": "X (Twitter) Pixel",
+      "category": "marketing",
+      "match_patterns": ["static.ads-twitter.com"],
+      "cookie_names": ["personalization_id", "muc_ads"],
+      "privacy_url": "https://twitter.com/en/privacy",
+      "notes_he": "מעקב המרות ופרסום ממוקד ב-X."
+    },
+    "taboola": {
+      "label_he": "טאבולה",
+      "label_en": "Taboola",
+      "category": "marketing",
+      "match_patterns": ["cdn.taboola.com"],
+      "cookie_names": ["taboola_*", "t_gid"],
+      "privacy_url": "https://www.taboola.com/policies/privacy-policy",
+      "notes_he": "המלצות תוכן ופרסום ממומן."
+    },
+    "outbrain": {
+      "label_he": "אאוטבריין",
+      "label_en": "Outbrain",
+      "category": "marketing",
+      "match_patterns": ["outbrain.com/outbrain.js"],
+      "cookie_names": ["obuid"],
+      "privacy_url": "https://www.outbrain.com/privacy/",
+      "notes_he": "המלצות תוכן ופרסום ממומן."
+    },
+    "youtube": {
+      "label_he": "יוטיוב (סרטונים מוטמעים)",
+      "label_en": "YouTube",
+      "category": "functional",
+      "match_patterns": ["youtube.com/embed", "youtube-nocookie.com/embed", "youtube.com/iframe_api", "ytimg.com"],
+      "cookie_names": ["VISITOR_INFO1_LIVE", "YSC", "__Secure-YEC", "__Secure-ROLLOUT_TOKEN"],
+      "privacy_url": "https://policies.google.com/privacy",
+      "notes_he": "נגן וידאו מוטמע של יוטיוב."
+    },
+    "vimeo": {
+      "label_he": "וימאו",
+      "label_en": "Vimeo",
+      "category": "functional",
+      "match_patterns": ["player.vimeo.com"],
+      "cookie_names": ["vuid", "player"],
+      "privacy_url": "https://vimeo.com/privacy",
+      "notes_he": "נגן וידאו מוטמע של וימאו."
+    },
+    "google_maps": {
+      "label_he": "גוגל מפות",
+      "label_en": "Google Maps",
+      "category": "functional",
+      "match_patterns": ["maps.googleapis.com", "google.com/maps/embed"],
+      "cookie_names": ["NID"],
+      "privacy_url": "https://policies.google.com/privacy",
+      "notes_he": "מפות מוטמעות של גוגל."
+    },
+    "google_fonts": {
+      "label_he": "גוגל פונטס",
+      "label_en": "Google Fonts",
+      "category": "functional",
+      "match_patterns": ["fonts.googleapis.com", "fonts.gstatic.com"],
+      "cookie_names": [],
+      "privacy_url": "https://policies.google.com/privacy",
+      "notes_he": "טעינת גופנים מגוגל."
+    },
+    "recaptcha": {
+      "label_he": "reCAPTCHA",
+      "label_en": "Google reCAPTCHA",
+      "category": "functional",
+      "match_patterns": ["google.com/recaptcha", "gstatic.com/recaptcha"],
+      "cookie_names": ["_GRECAPTCHA"],
+      "privacy_url": "https://policies.google.com/privacy",
+      "notes_he": "הגנה מפני ספאם וזיהוי בוטים בטפסים."
+    },
+    "bunny_stream": {
+      "label_he": "Bunny Stream",
+      "label_en": "Bunny Stream",
+      "category": "functional",
+      "match_patterns": ["iframe.mediadelivery.net", "b-cdn.net"],
+      "cookie_names": [],
+      "privacy_url": "https://bunny.net/privacy/",
+      "notes_he": "נגן וידאו מוטמע של Bunny Stream."
+    },
+    "soundcloud": {
+      "label_he": "סאונדקלאוד",
+      "label_en": "SoundCloud",
+      "category": "functional",
+      "match_patterns": ["w.soundcloud.com"],
+      "cookie_names": [],
+      "privacy_url": "https://soundcloud.com/pages/privacy",
+      "notes_he": "נגן אודיו מוטמע של סאונדקלאוד."
+    },
+    "spotify": {
+      "label_he": "ספוטיפיי",
+      "label_en": "Spotify",
+      "category": "functional",
+      "match_patterns": ["open.spotify.com/embed"],
+      "cookie_names": [],
+      "privacy_url": "https://www.spotify.com/legal/privacy-policy/",
+      "notes_he": "נגן מוזיקה מוטמע של ספוטיפיי."
+    },
+    "wordpress_core": {
+      "label_he": "וורדפרס (ליבה)",
+      "label_en": "WordPress Core",
+      "category": "necessary",
+      "match_patterns": [],
+      "cookie_names": ["wordpress_*", "wp-settings-*", "wp_lang", "comment_author_*"],
+      "privacy_url": "",
+      "notes_he": "עוגיות מערכת הכרחיות לתפעול האתר."
+    },
+    "woocommerce": {
+      "label_he": "ווקומרס (עגלת קניות)",
+      "label_en": "WooCommerce",
+      "category": "necessary",
+      "match_patterns": [],
+      "cookie_names": ["woocommerce_cart_hash", "woocommerce_items_in_cart", "wp_woocommerce_session_*", "woocommerce_recently_viewed"],
+      "privacy_url": "",
+      "notes_he": "עגלת קניות וניהול הזמנות."
+    },
+    "shuster_cookie_consent": {
+      "label_he": "הסכמת עוגיות",
+      "label_en": "Shuster Cookie Consent",
+      "category": "necessary",
+      "match_patterns": [],
+      "cookie_names": ["shco_consent"],
+      "privacy_url": "",
+      "notes_he": "שמירת בחירת ההסכמה של המשתמש לעוגיות."
+    },
+    "cloudflare": {
+      "label_he": "קלאודפלייר",
+      "label_en": "Cloudflare",
+      "category": "necessary",
+      "match_patterns": [],
+      "cookie_names": ["__cf_bm", "cf_clearance", "_cfuvid"],
+      "privacy_url": "https://www.cloudflare.com/privacypolicy/",
+      "notes_he": "אבטחה ומיטוב ביצועים של האתר."
+    },
+    "stripe_checkout": {
+      "label_he": "Stripe (סליקה)",
+      "label_en": "Stripe",
+      "category": "necessary",
+      "match_patterns": ["js.stripe.com"],
+      "cookie_names": ["__stripe_mid", "__stripe_sid"],
+      "privacy_url": "https://stripe.com/privacy",
+      "notes_he": "סליקת תשלומים מאובטחת."
+    },
+    "paypal_checkout": {
+      "label_he": "PayPal (סליקה)",
+      "label_en": "PayPal",
+      "category": "necessary",
+      "match_patterns": ["paypal.com/sdk"],
+      "cookie_names": ["ts", "ts_c", "x-pp-s"],
+      "privacy_url": "https://www.paypal.com/privacy",
+      "notes_he": "סליקת תשלומים מאובטחת."
+    }
+  }
+}
