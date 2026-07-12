@@ -244,6 +244,24 @@
       "cookie_names": ["ts", "ts_c", "x-pp-s"],
       "privacy_url": "https://www.paypal.com/privacy",
       "notes_he": "סליקת תשלומים מאובטחת."
+    },
+    "elementor": {
+      "label_he": "אלמנטור (בונה אתרים)",
+      "label_en": "Elementor",
+      "category": "functional",
+      "match_patterns": ["elementor/assets/js"],
+      "cookie_names": ["elementor"],
+      "privacy_url": "https://elementor.com/about/privacy/",
+      "notes_he": "שומר העדפות תצוגה של רכיבי העמוד."
+    },
+    "whatsapp_widget": {
+      "label_he": "וואטסאפ (כפתור צ'אט)",
+      "label_en": "WhatsApp Chat Widget",
+      "category": "functional",
+      "match_patterns": ["web.whatsapp.com", "wa.me", "api.whatsapp.com"],
+      "cookie_names": [],
+      "privacy_url": "https://www.whatsapp.com/legal/privacy-policy",
+      "notes_he": "כפתור צ'אט להתקשרות ישירה בוואטסאפ."
     }
   }
 }
