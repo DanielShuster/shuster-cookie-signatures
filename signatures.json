@@ -271,6 +271,21 @@
       "cookie_names": ["dmvk", "ts", "v1st", "dm-euconsent-v2"],
       "privacy_url": "https://legal.dailymotion.com/en/privacy-policy/",
       "notes_he": "נגן וידאו מוטמע של דיילימושן."
+    },
+    "google_maps": {
+      "label_he": "גוגל מפות",
+      "label_en": "Google Maps",
+      "category": "functional",
+      "match_patterns": [
+        "maps.googleapis.com",
+        "google.com/maps/embed",
+        "maps.google.com/maps",
+        "google.com/maps?",
+        "maps.gstatic.com"
+      ],
+      "cookie_names": ["NID", "CONSENT", "SOCS"],
+      "privacy_url": "https://policies.google.com/privacy",
+      "notes_he": "מפות מוטמעות של גוגל."
     }
   }
 }
