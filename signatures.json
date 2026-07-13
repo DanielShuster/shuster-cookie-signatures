@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "updated": "2026-07-12",
   "services": {
     "google_analytics_4": {
@@ -262,6 +262,15 @@
       "cookie_names": [],
       "privacy_url": "https://www.whatsapp.com/legal/privacy-policy",
       "notes_he": "כפתור צ'אט להתקשרות ישירה בוואטסאפ."
+    },
+    "dailymotion": {
+      "label_he": "דיילימושן (סרטונים מוטמעים)",
+      "label_en": "Dailymotion",
+      "category": "functional",
+      "match_patterns": ["dailymotion.com/embed", "geo.dailymotion.com", "dmcdn.net"],
+      "cookie_names": ["dmvk", "ts", "v1st", "dm-euconsent-v2"],
+      "privacy_url": "https://legal.dailymotion.com/en/privacy-policy/",
+      "notes_he": "נגן וידאו מוטמע של דיילימושן."
     }
   }
 }
