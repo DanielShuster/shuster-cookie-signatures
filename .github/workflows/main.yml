@@ -1,0 +1,26 @@
+name: Validate signatures
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: JSON syntax
+        run: jq empty signatures.json
+
+      - name: No duplicate service keys
+        run: |
+          DUPES=$(grep -oP '^\s*"\K[a-z_]+(?=":\s*\{)' signatures.json | sort | uniq -d)
+          if [ -n "$DUPES" ]; then
+            echo "❌ Duplicate keys found:"; echo "$DUPES"; exit 1
+          fi
+
+      - name: Required fields present
+        run: |
+          jq -e '.version and .services' signatures.json
+          jq -e '.services | to_entries | all(.value | has("label_he") and has("category"))' signatures.json
+
+      - name: Categories valid
+        run: |
+          jq -e '[.services[].category] | all(. == "necessary" or . == "functional" or . == "analytics" or . == "marketing")' signatures.json
