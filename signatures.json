@@ -1,5 +1,5 @@
 {
-  "version": "1.3.1",
+  "version": "1.3.2",
   "updated": "2026-07-13",
   "services": {
     "google_analytics_4": {
@@ -183,7 +183,7 @@
     "recaptcha": {
       "label_he": "reCAPTCHA",
       "label_en": "Google reCAPTCHA",
-      "category": "functional",
+      "category": "necessary",
       "domains": ["google.com", "gstatic.com", "recaptcha.net"],
       "match_patterns": ["recaptcha"],
       "cookie_names": ["_GRECAPTCHA"],
@@ -295,6 +295,16 @@
       "cookie_names": ["ts", "ts_c", "x-pp-s"],
       "privacy_url": "https://www.paypal.com/privacy",
       "notes_he": "סליקת תשלומים מאובטחת."
+    },
+    "cloudflare_turnstile": {
+      "label_he": "Cloudflare Turnstile (אימות אנטי-בוט)",
+      "label_en": "Cloudflare Turnstile",
+      "category": "necessary",
+      "domains": ["challenges.cloudflare.com"],
+      "match_patterns": ["challenges.cloudflare.com"],
+      "cookie_names": ["cf_clearance"],
+      "privacy_url": "https://www.cloudflare.com/privacypolicy/",
+      "notes_he": "אימות אנטי-בוט להגנה על טפסים ועל האתר."
     }
   }
 }
