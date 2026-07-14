@@ -1,6 +1,6 @@
 {
-  "version": "1.3.2",
-  "updated": "2026-07-13",
+  "version": "1.3.3",
+  "updated": "2026-07-14",
   "services": {
     "google_analytics_4": {
       "label_he": "גוגל אנליטיקס (GA4)",
@@ -9,6 +9,7 @@
       "domains": ["google-analytics.com", "analytics.google.com", "googletagmanager.com"],
       "match_patterns": ["gtag/js", "analytics.js", "/g/collect"],
       "cookie_names": ["_ga", "_ga_*", "_gid", "_gat", "_gat_*"],
+      "duration_he": "שנתיים (_ga), 24 שעות (_gid), דקה (_gat)",
       "privacy_url": "https://policies.google.com/privacy",
       "notes_he": "מדידת תנועה וניתוח התנהגות משתמשים באתר."
     },
@@ -19,6 +20,7 @@
       "domains": ["googletagmanager.com"],
       "match_patterns": ["gtm.js"],
       "cookie_names": ["_gcl_au"],
+      "duration_he": "3 חודשים",
       "privacy_url": "https://policies.google.com/privacy",
       "notes_he": "מערכת לניהול תגיות מדידה ושיווק."
     },
@@ -29,6 +31,7 @@
       "domains": ["clarity.ms"],
       "match_patterns": ["clarity.ms"],
       "cookie_names": ["_clck", "_clsk", "CLID"],
+      "duration_he": "שנה (_clck, CLID), יום (_clsk)",
       "privacy_url": "https://privacy.microsoft.com/privacystatement",
       "notes_he": "הקלטות מסך ומפות חום לניתוח שימוש."
     },
@@ -39,6 +42,7 @@
       "domains": ["hotjar.com", "hotjar.io"],
       "match_patterns": ["hotjar"],
       "cookie_names": ["_hj*"],
+      "duration_he": "בין 30 דקות לשנה, לפי סוג העוגייה",
       "privacy_url": "https://www.hotjar.com/legal/policies/privacy/",
       "notes_he": "מפות חום, הקלטות והתנהגות משתמשים."
     },
@@ -48,6 +52,7 @@
       "category": "analytics",
       "match_patterns": ["matomo.js", "piwik.js"],
       "cookie_names": ["_pk_id*", "_pk_ses*"],
+      "duration_he": "13 חודשים (_pk_id), 30 דקות (_pk_ses)",
       "privacy_url": "https://matomo.org/privacy-policy/",
       "notes_he": "אנליטיקס לניתוח תנועה באתר (מותקן לרוב בדומיין האתר עצמו)."
     },
@@ -57,6 +62,7 @@
       "category": "analytics",
       "match_patterns": ["sourcebuster.min.js", "sourcebuster.js"],
       "cookie_names": ["sbjs_*"],
+      "duration_he": "6 חודשים",
       "privacy_url": "https://woocommerce.com/document/woocommerce-order-attribution/",
       "notes_he": "עוקב אחר מקור התנועה שהוביל להזמנה (קמפיין, מנוע חיפוש, הפניה)."
     },
@@ -67,6 +73,7 @@
       "domains": ["facebook.net", "facebook.com"],
       "match_patterns": ["connect.facebook.net", "facebook.com/tr"],
       "cookie_names": ["_fbp", "_fbc", "fr"],
+      "duration_he": "3 חודשים",
       "privacy_url": "https://www.facebook.com/policy.php",
       "notes_he": "מעקב המרות ופרסום ממוקד ברשתות מטא."
     },
@@ -77,6 +84,7 @@
       "domains": ["googleadservices.com", "googlesyndication.com", "doubleclick.net"],
       "match_patterns": ["googleadservices", "googlesyndication", "doubleclick"],
       "cookie_names": ["_gcl_au", "_gcl_aw", "IDE", "test_cookie"],
+      "duration_he": "3 חודשים (_gcl), שנה (IDE), 15 דקות (test_cookie)",
       "privacy_url": "https://policies.google.com/privacy",
       "notes_he": "פרסום ממוקד ומעקב המרות בגוגל."
     },
@@ -87,6 +95,7 @@
       "domains": ["tiktok.com", "tiktokcdn.com"],
       "match_patterns": ["analytics.tiktok.com"],
       "cookie_names": ["_ttp", "_tt_enable_cookie"],
+      "duration_he": "13 חודשים",
       "privacy_url": "https://www.tiktok.com/legal/privacy-policy",
       "notes_he": "מעקב המרות ופרסום ממוקד בטיקטוק."
     },
@@ -97,6 +106,7 @@
       "domains": ["licdn.com"],
       "match_patterns": ["snap.licdn.com"],
       "cookie_names": ["bcookie", "lidc", "li_gc", "UserMatchHistory"],
+      "duration_he": "בין יום לשנתיים, לפי סוג העוגייה",
       "privacy_url": "https://www.linkedin.com/legal/privacy-policy",
       "notes_he": "מעקב המרות ופרסום ממוקד בלינקדאין."
     },
@@ -107,6 +117,7 @@
       "domains": ["ads-twitter.com", "t.co"],
       "match_patterns": ["ads-twitter.com"],
       "cookie_names": ["personalization_id", "muc_ads"],
+      "duration_he": "שנתיים",
       "privacy_url": "https://twitter.com/en/privacy",
       "notes_he": "מעקב המרות ופרסום ממוקד ב-X."
     },
@@ -117,6 +128,7 @@
       "domains": ["taboola.com"],
       "match_patterns": ["taboola"],
       "cookie_names": ["taboola_*", "t_gid"],
+      "duration_he": "עד שנה",
       "privacy_url": "https://www.taboola.com/policies/privacy-policy",
       "notes_he": "המלצות תוכן ופרסום ממומן."
     },
@@ -127,6 +139,7 @@
       "domains": ["outbrain.com"],
       "match_patterns": ["outbrain"],
       "cookie_names": ["obuid"],
+      "duration_he": "3 חודשים",
       "privacy_url": "https://www.outbrain.com/privacy/",
       "notes_he": "המלצות תוכן ופרסום ממומן."
     },
@@ -137,6 +150,7 @@
       "domains": ["youtube.com", "youtube-nocookie.com", "ytimg.com", "youtu.be"],
       "match_patterns": ["youtube", "ytimg"],
       "cookie_names": ["VISITOR_INFO1_LIVE", "YSC", "__Secure-YEC", "__Secure-ROLLOUT_TOKEN"],
+      "duration_he": "6 חודשים (VISITOR_INFO1_LIVE), עד סגירת הדפדפן (YSC)",
       "privacy_url": "https://policies.google.com/privacy",
       "notes_he": "נגן וידאו מוטמע של יוטיוב."
     },
@@ -147,6 +161,7 @@
       "domains": ["vimeo.com", "vimeocdn.com"],
       "match_patterns": ["vimeo"],
       "cookie_names": ["vuid", "player"],
+      "duration_he": "שנתיים (vuid), עד סגירת הדפדפן (player)",
       "privacy_url": "https://vimeo.com/privacy",
       "notes_he": "נגן וידאו מוטמע של וימאו."
     },
@@ -157,6 +172,7 @@
       "domains": ["dailymotion.com", "dmcdn.net", "dm-event.net"],
       "match_patterns": ["dailymotion", "dmcdn"],
       "cookie_names": ["dmvk", "ts", "v1st", "dm-euconsent-v2"],
+      "duration_he": "בין סגירת הדפדפן לשנה, לפי סוג העוגייה",
       "privacy_url": "https://legal.dailymotion.com/en/privacy-policy/",
       "notes_he": "נגן וידאו מוטמע של דיילימושן."
     },
@@ -167,6 +183,7 @@
       "domains": ["google.com", "googleapis.com", "gstatic.com"],
       "match_patterns": ["maps.google.com", "google.com/maps", "/maps/embed", "maps.googleapis.com", "maps.gstatic.com"],
       "cookie_names": ["NID", "CONSENT", "SOCS"],
+      "duration_he": "6 חודשים (NID), עד שנתיים (CONSENT, SOCS)",
       "privacy_url": "https://policies.google.com/privacy",
       "notes_he": "מפות מוטמעות של גוגל."
     },
@@ -177,6 +194,7 @@
       "domains": ["googleapis.com", "gstatic.com"],
       "match_patterns": ["fonts.googleapis.com", "fonts.gstatic.com"],
       "cookie_names": [],
+      "duration_he": "אינו מציב עוגיות, אך חושף את כתובת ה-IP של הגולש לגוגל",
       "privacy_url": "https://policies.google.com/privacy",
       "notes_he": "טעינת גופנים מגוגל."
     },
@@ -187,6 +205,7 @@
       "domains": ["google.com", "gstatic.com", "recaptcha.net"],
       "match_patterns": ["recaptcha"],
       "cookie_names": ["_GRECAPTCHA"],
+      "duration_he": "6 חודשים",
       "privacy_url": "https://policies.google.com/privacy",
       "notes_he": "הגנה מפני ספאם וזיהוי בוטים בטפסים."
     },
@@ -197,6 +216,7 @@
       "domains": ["mediadelivery.net", "b-cdn.net"],
       "match_patterns": ["iframe.mediadelivery.net", "b-cdn.net"],
       "cookie_names": [],
+      "duration_he": "אינו מציב עוגיות",
       "privacy_url": "https://bunny.net/privacy/",
       "notes_he": "נגן וידאו מוטמע של Bunny Stream."
     },
@@ -207,6 +227,7 @@
       "domains": ["soundcloud.com", "sndcdn.com"],
       "match_patterns": ["soundcloud"],
       "cookie_names": [],
+      "duration_he": "אינו מציב עוגיות ישירות",
       "privacy_url": "https://soundcloud.com/pages/privacy",
       "notes_he": "נגן אודיו מוטמע של סאונדקלאוד."
     },
@@ -217,6 +238,7 @@
       "domains": ["spotify.com"],
       "match_patterns": ["open.spotify.com/embed"],
       "cookie_names": [],
+      "duration_he": "אינו מציב עוגיות ישירות",
       "privacy_url": "https://www.spotify.com/legal/privacy-policy/",
       "notes_he": "נגן מוזיקה מוטמע של ספוטיפיי."
     },
@@ -227,6 +249,7 @@
       "domains": ["wati.io", "whatshelp.io", "getbutton.io"],
       "match_patterns": ["web.whatsapp.com/embed", "wati.io", "whatshelp.io", "getbutton.io"],
       "cookie_names": [],
+      "duration_he": "משתנה לפי ספק הווידג'ט",
       "privacy_url": "https://www.whatsapp.com/legal/privacy-policy",
       "notes_he": "ווידג'ט צ'אט מוטמע של וואטסאפ. שים לב: קישורי wa.me רגילים אינם דורשים חסימה — הם אינם פונים לשרת עד שהמשתמש לוחץ."
     },
@@ -237,6 +260,7 @@
       "domains": ["elementor.com"],
       "match_patterns": ["cdn.elementor.com"],
       "cookie_names": [],
+      "duration_he": "אינו מציב עוגיות",
       "privacy_url": "https://elementor.com/about/privacy/",
       "notes_he": "טעינת אייקונים, גופנים ונכסים של רכיבי העמוד."
     },
@@ -246,6 +270,7 @@
       "category": "necessary",
       "match_patterns": [],
       "cookie_names": ["wordpress_*", "wp-settings-*", "wp_lang", "comment_author_*"],
+      "duration_he": "שנה (wp-settings), עד סגירת הדפדפן או 14 יום (עוגיות התחברות)",
       "privacy_url": "",
       "notes_he": "עוגיות מערכת הכרחיות לתפעול האתר."
     },
@@ -255,6 +280,7 @@
       "category": "necessary",
       "match_patterns": [],
       "cookie_names": ["woocommerce_cart_hash", "woocommerce_items_in_cart", "wp_woocommerce_session_*", "woocommerce_recently_viewed"],
+      "duration_he": "עד סגירת הדפדפן (עגלה), יומיים (session)",
       "privacy_url": "",
       "notes_he": "עגלת קניות וניהול הזמנות."
     },
@@ -264,6 +290,7 @@
       "category": "necessary",
       "match_patterns": [],
       "cookie_names": ["shco_consent"],
+      "duration_he": "12 חודשים",
       "privacy_url": "",
       "notes_he": "שמירת בחירת ההסכמה של המשתמש לעוגיות."
     },
@@ -273,6 +300,7 @@
       "category": "necessary",
       "match_patterns": [],
       "cookie_names": ["__cf_bm", "cf_clearance", "_cfuvid"],
+      "duration_he": "30 דקות (__cf_bm), שנה (cf_clearance), עד סגירת הדפדפן (_cfuvid)",
       "privacy_url": "https://www.cloudflare.com/privacypolicy/",
       "notes_he": "אבטחה ומיטוב ביצועים של האתר."
     },
@@ -283,6 +311,7 @@
       "domains": ["stripe.com", "stripe.network"],
       "match_patterns": ["js.stripe.com"],
       "cookie_names": ["__stripe_mid", "__stripe_sid"],
+      "duration_he": "שנה (__stripe_mid), 30 דקות (__stripe_sid)",
       "privacy_url": "https://stripe.com/privacy",
       "notes_he": "סליקת תשלומים מאובטחת."
     },
@@ -293,6 +322,7 @@
       "domains": ["paypal.com", "paypalobjects.com"],
       "match_patterns": ["paypal.com/sdk"],
       "cookie_names": ["ts", "ts_c", "x-pp-s"],
+      "duration_he": "בין סגירת הדפדפן לשלוש שנים, לפי סוג העוגייה",
       "privacy_url": "https://www.paypal.com/privacy",
       "notes_he": "סליקת תשלומים מאובטחת."
     },
@@ -303,6 +333,7 @@
       "domains": ["challenges.cloudflare.com"],
       "match_patterns": ["challenges.cloudflare.com"],
       "cookie_names": ["cf_clearance"],
+      "duration_he": "שנה",
       "privacy_url": "https://www.cloudflare.com/privacypolicy/",
       "notes_he": "אימות אנטי-בוט להגנה על טפסים ועל האתר."
     }
