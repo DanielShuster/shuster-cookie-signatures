@@ -1,6 +1,6 @@
 {
-  "version": "1.3.3",
-  "updated": "2026-07-14",
+  "version": "1.3.4",
+  "updated": "2026-08-19",
   "services": {
     "google_analytics_4": {
       "label_he": "גוגל אנליטיקס (GA4)",
@@ -336,6 +336,16 @@
       "duration_he": "שנה",
       "privacy_url": "https://www.cloudflare.com/privacypolicy/",
       "notes_he": "אימות אנטי-בוט להגנה על טפסים ועל האתר."
+    },
+        "shuster_a11y": {
+      "label_he": "נגישות (Shuster Accessibility)",
+      "label_en": "Shuster Accessibility",
+      "category": "necessary",
+      "match_patterns": [],
+      "cookie_names": ["shuster_a11y_state", "shuster_a11y_*"],
+      "duration_he": "שנה",
+      "privacy_url": "",
+      "notes_he": "שומר את העדפות הנגישות של המשתמש באתר (ניגודיות, גודל טקסט וכו')."
     }
   }
 }
